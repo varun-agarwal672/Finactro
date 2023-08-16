@@ -1,0 +1,37 @@
+.desc-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5vmax 0;
+    padding: 0 5%;
+}
+
+.desc-container img {
+    width: 100%;
+    max-width: 55vmin;
+}
+
+.description{
+    width: 40%;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    color: #00689b;
+    text-align: justify;
+}
+
+@media screen and (max-width : 1400px) {
+    .desc-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description {
+        width: 100%;
+        margin: 2vmin 0;
+        text-align: justify;
+    }
+
+    .desc-container img {
+        max-width: 90vmin;
+    }
+}

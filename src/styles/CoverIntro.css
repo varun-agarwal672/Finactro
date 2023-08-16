@@ -1,0 +1,37 @@
+.intro-container {
+  position: relative;
+}
+  
+  .main-text {
+    position: absolute;
+    bottom: 8vmax;
+    left: 7%;
+    font-size: 1.6vmax;
+    font-weight: normal;
+    color: white;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 104, 155, 0.8);
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+  }
+
+  .bar-text {
+    margin-left: 7%;
+    font-size: 2vmax;
+  }
+
+  .bg-image {
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+  }

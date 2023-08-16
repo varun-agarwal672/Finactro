@@ -1,0 +1,128 @@
+.consulting-vision {
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .background{
+    width: 100%;
+  }
+
+  .consulting-vision-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    position: absolute;
+    bottom : 15vmax;
+    margin: 0 10%;
+  }
+  
+  .consulting-vision h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5vmax;
+    margin: 1vmin 0;
+    color: #fff;
+    font-weight: normal;
+  }
+  
+  .consulting-vision p {
+    font-size: 1.5vmax;
+    color: #fff;
+    justify-self: center;
+    margin: 1vmin 0;
+  }
+  
+  .button-container {
+    margin: 1vmin 0;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button-container h3 {
+    color: #fff;
+    font-size: 1.5vmax;
+    /* margin-bottom: 15px; */
+    font-weight: normal;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  .buttons button {
+    padding: 1vmax 1vmax;
+    font-size: 1vmax;
+    color: #00689b;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    width: 35vmax;
+    border: solid;
+    border-width: 0.09rem;
+    background-color: #fff;
+  }
+
+  .buttons button:hover {
+    background-color: #00689b;
+    color: #fff;
+    border-color: #fff;
+    transition: 300ms;
+  }
+
+  @media screen and (max-width : 1025px) {
+    .buttons{
+      flex-direction: column;
+      align-items: center;
+    }
+    .buttons button {
+      margin-bottom: 1vmin;
+    }
+    .consulting-vision-content{
+      margin: 0 5%;
+      bottom : 5vmax;
+    }
+  }
+
+  @media screen and (max-width : 430px) {
+    .consulting-vision{
+      height : 70vmin;
+    }.consulting-vision-content{
+      bottom: 1vmax;
+    }
+  }
+  @media screen  and (max-width : 550px) {
+    .consulting-vision-content{
+      bottom : 1vmax !important;
+    }
+  }
+
+  @media screen and (max-width : 320px) {
+    .consulting-vision{
+      height: 100vmin;
+    }
+    .consulting-vision-content{
+      bottom: 4vmin !important;
+    }
+  }
+
+  @media screen and (max-width : 850px){
+    .consulting-vision-content{
+      bottom: 5vmax;
+    }
+  }
+  @media screen and (min-width : 1024px) {
+    .consulting-vision h2{
+      margin-bottom: 2vmax;
+    }
+    .consulting-vision p {
+      margin: 1vmax 0;
+    }
+  }

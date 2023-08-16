@@ -1,0 +1,33 @@
+.be-a-part-of-our-journey {
+  display: flex;
+  background: url("../constants/bapooc-bg.jpg") no-repeat center center/cover;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 82vmin;
+}
+
+.be-a-part-of-our-journey h2 {
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.be-a-part-of-our-journey button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #fff;
+  color: #00689b;
+  border: solid;
+  border-width: 0.09rem;
+  border-color: #00689b;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.be-a-part-of-our-journey button:hover {
+  background-color: #00689b;
+  color: #fff;
+  transition: 300ms;
+  border-color: #fff;
+}

@@ -1,0 +1,27 @@
+.why-us {
+    padding: 3% 8%;
+    color: #fff;
+    background: linear-gradient(to right, #00689b, #004d6e);
+  }
+  
+  .why-us h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .why-us ul {
+    padding: 0 1rem;
+  }
+  
+  .why-us li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    
+  }
+  
+  .why-us strong {
+    font-weight: bold;
+  }
+  
