@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 import "../styles/Navbar.css";
 import { Home, Business, Article, PersonAdd, LocationOn } from "@mui/icons-material";
 import logo from "../constants/logos/finalpng.png";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import MenuIcon from '@mui/icons-material/Menu';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const Navbar = () => {
   const location = useLocation();
@@ -21,6 +23,19 @@ const Navbar = () => {
   const handleDropdownClose = () => {
     setShowDropdown(false);
   };
+
+  const overlay = useRef(null);
+  const menu = useRef(null);
+
+  const displayMenu = () => {
+    overlay.current.classList.add("active");
+    menu.current.classList.add("menu-active");
+  }
+
+  const hideMenu = () => {
+    overlay.current.classList.remove("active");
+    menu.current.classList.remove("menu-active");
+  }
 
   return (
     <div className="navbar">
@@ -66,7 +81,48 @@ const Navbar = () => {
           <LocationOn className="icon" />
           Location
         </a>
-      </div>
+        </div>
+        <div className="hamburger-menu">
+            <MenuIcon onClick={displayMenu} className="menu-icon" />
+            <div ref={overlay} className="screen-overlay"></div>
+            <div ref={menu} className="menu-wrapper">
+              <div className="menu-items">
+                <ArrowForwardIcon onClick={hideMenu} className="back-button"/>
+                <div className="mobile-nav">
+                  <ul>
+                    <li>
+                      <a href="/" className="mobile-tab">Home</a>
+                      <hr/>
+                    </li>
+                    <li>
+                      <a href="/about-us" className="mobile-tab">About Us</a>
+                      <hr/>
+                    </li>
+                    <li>
+                      <a href="/news-and-views" className="mobile-tab">News and Views</a>
+                      <hr/>
+                    </li>
+                    <li>
+                      <a href="/accounting-reporting-consulting" className="mobile-tab">Accounting & Reporting Consulting</a>
+                      <hr/>
+                    </li>
+                    <li>
+                      <a href="/esg-consulting" className="mobile-tab">ESG Consulting</a>
+                      <hr/>
+                    </li>
+                    <li>
+                      <a href="/join-us" className="mobile-tab">Join Us</a>
+                      <hr/>
+                    </li>
+                    <li>
+                      <a href="contact-us" className="mobile-tab">Contact Us</a>
+                      <hr/>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
     </div>
   );
 };

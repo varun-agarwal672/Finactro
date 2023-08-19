@@ -4,7 +4,7 @@
   align-items: center;
   background-color: #fff;
   color: #00689b;
-  padding: 1rem 0rem;
+  padding: 2vmin 0;
   width: 100%;
   z-index: 1000;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
@@ -24,9 +24,8 @@
 }
 
 .logo {
-  width: 8rem;
-  height: 3rem;
-  padding-bottom: 0.5rem;
+  width: 25vmin;
+  height: 8vmin;
 }
 
 .navbar .tab {
@@ -92,4 +91,82 @@
 
 .tab:hover .dropdown-menu a {
   transition-delay: 1s;
+}
+
+.screen-overlay{
+  position: fixed;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    background: transparent;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+
+.menu-wrapper{
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    z-index: 9999;
+    transform: translateX(100%);
+    overflow-x: hidden;
+    transition: all 0.3s linear;
+}
+
+.menu-items{
+  padding: 2rem 2rem;
+  height: 100%;
+}
+
+.menu-items ul {
+  list-style-type: none;
+}
+
+.mobile-nav ul {
+  padding: 0;
+}
+
+.mobile-nav a{
+  padding: 1vmin 0;
+  width: 100%;
+}
+
+.hamburger-menu{
+  display: none;
+}
+
+.menu-icon {
+  width: 7vmin !important;
+  height: 7vmin !important;
+}
+
+@media screen and (max-width : 1024px) {
+  .tab{
+    display: none !important;
+  }
+  .menu-active{
+    transform: translateX(0);
+    transition: all 0.3s linear;
+  }
+  
+  .active{
+      background: rgba(0, 0, 0, 0.7);
+      visibility: visible;
+      opacity: 1;
+      z-index: 9998;
+  }
+  .hamburger-menu{
+    display: block;
+  }
+
+  .navbar{
+    padding: 2vmin 3vmin;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
 }
