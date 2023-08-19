@@ -24,8 +24,8 @@
 }
 
 .logo {
-  width: 25vmin;
-  height: 8vmin;
+  width: 20vmin;
+  height: 6vmin;
 }
 
 .navbar .tab {
@@ -119,7 +119,7 @@
 }
 
 .menu-items{
-  padding: 2rem 2rem;
+  padding: 5vmin 5vmin;
 }
 
 .menu-items ul {
@@ -133,6 +133,7 @@
 .mobile-nav a{
   padding: 1vmin 0;
   width: 100%;
+  font-size: 1.1rem;
 }
 
 .hamburger-menu{
@@ -140,8 +141,8 @@
 }
 
 .menu-icon {
-  width: 7vmin !important;
-  height: 7vmin !important;
+  width: 2rem !important;
+  height: 2rem !important;
 }
 
 @media screen and (max-width : 1024px) {
@@ -167,5 +168,9 @@
     padding: 2vmin 3vmin;
     justify-content: space-between;
     box-sizing: border-box;
+  }
+  .logo{
+    width: 9rem;
+    height: 3rem;
   }
 }
